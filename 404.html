@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 - 页面未找到</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* 使用 min-height 以确保内容高度小于视口高度时，仍然保持居中 */
+  }
+
+<p>  .container {<br>    text-align: center;<br>    padding: 40px;<br>    background-color: #fff;<br>    border-radius: 20px;<br>    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);<br>    transition: box-shadow 0.3s ease-in-out;<br>    position: relative;<br>  }</p>
+<p>  .container:hover {<br>    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);<br>  }</p>
+<p>  .not-found {<br>    font-size: 80px;<br>    color: #007bff;<br>    margin-bottom: 20px;<br>    transition: transform 0.3s ease-in-out;<br>    position: relative;<br>    z-index: 1;<br>  }</p>
+<p>  .container:hover .not-found {<br>    transform: translateY(-30px);<br>  }</p>
+<p>  .deer {<br>    position: absolute;<br>    bottom: -15%; &#x2F;* 修改底部距离 *&#x2F;<br>    left: 50%;<br>    transform: translateX(-50%);<br>    transition: bottom 0.5s ease-in-out;<br>    z-index: 0;<br>  }</p>
+<p>  .container:hover .deer {<br>    bottom: 100%; &#x2F;* 修改向上移动的距离 *&#x2F;<br>  }</p>
+<p>  .floating-button {<br>    position: fixed;<br>    bottom: 20px;<br>    right: 20px;<br>    z-index: 3; &#x2F;* 设置按钮为最顶层 *&#x2F;<br>    background-color: #007bff;<br>    color: #fff;<br>    border: none;<br>    border-radius: 50%;<br>    width: 50px;<br>    height: 50px;<br>    cursor: pointer;<br>    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);<br>    outline: none;<br>    transition: transform 0.3s ease-in-out;<br>  }</p>
+<p>  .floating-button:hover {<br>    transform: scale(1.1);<br>  }</p>
+<p>  .ascii-window {<br>    position: fixed;<br>    top: 0;<br>    right: 0; &#x2F;* 初始时隐藏在页面右侧 <em>&#x2F;<br>    width: 300px;<br>    height: 100%;<br>    padding: 20px;<br>    background-color: #007bff;<br>    color: #fff;<br>    font-size: 14px;<br>    border-bottom-left-radius: 20px;<br>    box-shadow: -8px 8px 16px rgba(0, 0, 0, 0.1);<br>    z-index: 2;<br>    display: none; &#x2F;</em> 初始时隐藏 *&#x2F;<br>    transition: right 0.3s ease-in-out;<br>  }</p>
+<p>  .ascii-window.active {<br>    right: 0; &#x2F;* 显示在页面右侧 <em>&#x2F;<br>    display: block; &#x2F;</em> 显示 ASCII 窗口 *&#x2F;<br>  }</p>
+<p>  h2 {<br>    font-size: 20px;<br>    margin-bottom: 10px;<br>  }</p>
+<p>  .public-service {<br>    margin-top: 40px;<br>    font-size: 16px;<br>    color: #666;<br>  }</p>
+<p></style></p>
+</head>
+<body>
+<div class="container">
+    <div class="not-found">404</div>
+    <h1>糟糕，找不到文章了</h1>
+    <p>当前访问的信息不存在或已被删除。</p>
+    <a href="/">返回首页</a>
+    <div class="deer"></div>
+</div>
+
+</html>
